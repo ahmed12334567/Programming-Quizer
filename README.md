@@ -1,62 +1,85 @@
-# CodePulse — Programming Course Quiz Platform
+# Programming Quizer
 
-A high-performance, serverless programming assessment web platform built with **React 18 + TypeScript (Strict Mode)**, **Vite**, **Tailwind CSS**, **React Router v6 (`HashRouter`)**, **Zustand**, **Zod**, and **Firebase (Auth & Cloud Firestore)**.
+A modern, high-performance programming assessment and quiz platform built with **React 18**, **TypeScript (Strict Mode)**, **Vite**, **Tailwind CSS**, **Framer Motion**, and **Google Cloud Firestore**.
 
 ---
 
-## 1. System Architecture
+## 1. Overview & Key Features
+
+- **Cloud Firestore Storage**: Questions are stored as independent documents in the `questions` collection (`questions/{questionId}`) with Document ID mapped to Question ID.
+- **Dynamic Multi-Unit Selection**: Students can select one or multiple course units simultaneously (React.js, PHP, Web Development, Laravel) with dynamic question count badges.
+- **Flexible Question Count**: Interactive count selector supporting a range slider, step buttons, direct numeric inputs, dynamic presets, and an "All Questions" mode.
+- **Timed & Drift-Free Engine**: Configurable test timer with auto-submit, interactive question navigator, and bookmarking.
+- **Detailed Scoring & Review**: Instant score calculation, circular progress gauge, pass/fail status, and per-question reviews with explanations and code snippets.
+- **Instructor Admin Portal**:
+  - Protected by Firebase Authentication (Email/Password) with server-side custom claim verification (`admin: true`) and allowlists.
+  - Full Question CRUD (Create, Read, Search/Filter, Edit, Delete).
+  - Safe delete confirmation modal displaying question ID, unit, and question preview.
+  - JSON Import & Export with automated batch writes (500 docs/batch) and Zod schema validation.
+  - Global settings persistence in Firestore (`settings/quiz`).
+- **Polished UI & Theme Switcher**: Fluid dark/light mode toggle with rotating animated icons, responsive cards, and clean typography.
+
+---
+
+## 2. System Architecture
 
 ```text
-┌─────────────────────────────────────────────────────────────┐
-│                       Client Browser                        │
-│                                                             │
-│   ┌─────────────────────┐         ┌─────────────────────┐   │
-│   │   Student View      │         │   Admin Portal      │   │
-│   │   • No login req.   │         │   • Firebase Auth   │   │
-│   │   • Read once       │         │   • Direct write    │   │
-│   │   • In-memory cache │         │   • Bulk import     │   │
-│   │   • Local attempts  │         │   • Backup export   │   │
-│   └──────────┬──────────┘         └──────────┬──────────┘   │
-│              │ (Read: once on load)          │ (Write)      │
-│              ▼                               ▼              │
-│       ┌──────────────────────────────────────────────┐      │
-│       │      Zod Schema Validation Boundary          │      │
-│       │      (Verified on Read & Before Write)       │      │
-│       └──────────────────────┬───────────────────────┘      │
-└──────────────────────────────┼──────────────────────────────┘
-                               │
-                               ▼
-        ┌──────────────────────────────────────────────┐
-        │               Firebase Cloud                 │
-        │                                              │
-        │   • Firebase Auth (Email/Password Admin)     │
-        │   • Cloud Firestore (doc: quizzes/main)      │
-        │   • Security Rules (Public Read, Auth Write) │
-        └──────────────────────────────────────────────┘
+┌────────────────────────────────────────────────────────────────────────┐
+│                             Client Browser                             │
+│                                                                        │
+│   ┌──────────────────────────────┐    ┌────────────────────────────┐   │
+│   │         Student Portal       │    │      Instructor Admin      │   │
+│   │  • Multi-Unit Filter         │    │  • Firebase Auth Guard     │   │
+│   │  • Dynamic Count Selector    │    │  • Question Table & Filter │   │
+│   │  • Timed Quiz Engine         │    │  • Zod Validated CRUD Form │   │
+│   │  • Local Attempt Storage     │    │  • Safe Delete Modal       │   │
+│   │  • Instant Score & Review    │    │  • Bulk Import / Export    │   │
+│   └──────────────┬───────────────┘    └──────────────┬─────────────┘   │
+│                  │                                   │                 │
+│                  ▼                                   ▼                 │
+│   ┌────────────────────────────────────────────────────────────────┐   │
+│   │           Questions Service & Zod Validation Layer             │   │
+│   │       (src/features/admin/questionsService.ts & questionSchema)│   │
+│   └──────────────────────────────┬─────────────────────────────────┘   │
+└──────────────────────────────────┼─────────────────────────────────────┘
+                                   │
+                                   ▼
+    ┌───────────────────────────────────────────────────────────────┐
+    │                     Google Cloud Firestore                    │
+    │                                                               │
+    │   • `questions/{questionId}`: 263 questions across units      │
+    │   • `settings/quiz`: Default passing mark & timer values      │
+    │   • Security Rules: Public Read / Admin-Only Write            │
+    └───────────────────────────────────────────────────────────────┘
 ```
-
-- **Zero Custom Server**: Backed 100% by Google Firebase client SDKs (`firebase/auth` and `firebase/firestore`).
-- **Admin Authentication**: Firebase Auth (Email/Password). Students require no account or sign-in.
-- **Single Source of Truth**: All quiz questions, title, and pass mark are stored in Firestore doc `quizzes/main`.
-- **Runtime Validation**: Validated with **Zod** (`QuestionBankSchema`) before every Firestore write and after every Firestore read.
-- **In-Memory Caching**: Students read the quiz once on application load, cached in memory to minimize network requests.
-- **Direct Admin Saves**: Admin question additions, edits, deletions, and settings save directly to Firestore (no export/redeploy flow required).
-- **Import & Backup**: "Download JSON Backup" is available for offline archival, and "Import JSON" enables instant bulk-loading.
-- **Attempt History**: Preserved locally in `localStorage` on each student's device.
 
 ---
 
-## 2. Quick Start
+## 3. Tech Stack
+
+| Layer | Technologies |
+| :--- | :--- |
+| **Frontend** | React 18, TypeScript 5, Vite, React Router v6 (`HashRouter`) |
+| **Styling & UI** | Tailwind CSS, Lucide React, Prism React Renderer |
+| **Animation** | Framer Motion |
+| **State & Validation** | Zustand, Zod |
+| **Backend / DB** | Google Firebase Client SDK (`firebase/app`, `firebase/firestore`, `firebase/auth`) |
+| **Admin Tools** | Firebase Admin SDK (`firebase-admin`) for security rules & claim management |
+
+---
+
+## 4. Quick Start
 
 ### Prerequisites
 - Node.js 18+ and npm
 
 ```bash
-# 1. Install dependencies
+# 1. Clone repository & install dependencies
 npm install
 
-# 2. Configure environment variables (see Firebase Setup below)
+# 2. Configure environment variables
 cp .env.example .env
+# Edit .env with your Firebase project credentials
 
 # 3. Start local development server
 npm run dev
@@ -66,78 +89,72 @@ npm run typecheck
 
 # 5. Production build
 npm run build
-
-# 6. Preview production build
-npm run preview
 ```
 
 ---
 
-## 3. Firebase Setup Guide
+## 5. Environment Configuration
 
-Follow these steps to connect your Firebase project:
-
-### Step 1: Create a Firebase Project
-1. Open the [Firebase Console](https://console.firebase.google.com/).
-2. Click **Add project** and name your project (e.g. `codepulse-quiz`).
-3. (Optional) Disable Google Analytics or link an existing account, then click **Create project**.
-
-### Step 2: Register a Web App
-1. On your project overview page, click the **Web icon (`</>`)** to add a web application.
-2. Enter an app nickname (e.g. `codepulse-web`).
-3. Click **Register app**.
-4. Firebase will display your `firebaseConfig` credentials object. Keep these for Step 5.
-
-### Step 3: Enable Firebase Authentication
-1. In the left navigation menu, go to **Build → Authentication**.
-2. Click **Get started**.
-3. Under the **Sign-in method** tab, select **Email/Password**.
-4. Enable the first toggle (**Email/Password**) and click **Save**.
-5. Go to the **Users** tab and click **Add user**.
-6. Enter your admin email (e.g., `admin@course.edu`) and a secure password. This is the credential you will use at `/#/admin/login`.
-
-### Step 4: Create Cloud Firestore Database
-1. In the left navigation menu, go to **Build → Firestore Database**.
-2. Click **Create database**.
-3. Choose a database location close to your users (e.g. `nam5 (us-central)` or `eur3 (europe-west)`).
-4. Choose **Start in production mode** and click **Create**.
-
-### Step 5: Configure Local Environment Variables
-Create or edit `.env` in the root directory:
+Create a `.env` file in the project root based on `.env.example`:
 
 ```env
-VITE_FIREBASE_API_KEY="your-api-key"
-VITE_FIREBASE_AUTH_DOMAIN="your-project-id.firebaseapp.com"
-VITE_FIREBASE_PROJECT_ID="your-project-id"
-VITE_FIREBASE_STORAGE_BUCKET="your-project-id.firebasestorage.app"
-VITE_FIREBASE_MESSAGING_SENDER_ID="your-sender-id"
-VITE_FIREBASE_APP_ID="your-app-id"
-VITE_FIREBASE_MEASUREMENT_ID="your-measurement-id"
-```
+# Firebase Web App Credentials (from Firebase Console -> Project Settings)
+VITE_FIREBASE_API_KEY=AIzaSy...
+VITE_FIREBASE_AUTH_DOMAIN=your-project.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=your-project-id
+VITE_FIREBASE_STORAGE_BUCKET=your-project.firebasestorage.app
+VITE_FIREBASE_MESSAGING_SENDER_ID=1234567890
+VITE_FIREBASE_APP_ID=1:1234567890:web:...
+VITE_FIREBASE_MEASUREMENT_ID=G-...
 
-### Step 6: Seed Initial Questions
-1. Run `npm run dev` and open `http://localhost:5173/#/admin/login`.
-2. Sign in with the admin user created in Step 3.
-3. If Firestore is empty, click **Seed Firestore from questions.json** or go to **Import / Export JSON** and upload `public/questions.json`.
-4. The question bank is now live in Firestore doc `quizzes/main`.
+# Optional Admin Email / UID Allowlist (fallback in addition to custom claim `admin: true`)
+VITE_ADMIN_EMAILS=admin@course.edu
+VITE_ADMIN_UIDS=
+```
 
 ---
 
-## 4. Firestore Security Rules
+## 6. Firebase & Security Setup
 
-To ensure students can read the quiz while only authenticated administrators can modify it, paste these exact rules into **Firebase Console → Firestore Database → Rules**:
+### 1. Enable Firebase Authentication
+1. Go to **Firebase Console → Build → Authentication → Sign-in method**.
+2. Enable **Email/Password**.
+3. Under the **Users** tab, add your administrator email (e.g. `admin@course.edu`).
+
+### 2. Assign Administrator Privileges
+Run the included administration script to grant the `{ admin: true }` custom claim:
+
+```bash
+npx tsx scripts/set-admin.ts admin@course.edu
+```
+
+*(Requires `scripts/serviceAccountKey.json` from Firebase Console → Project Settings → Service accounts).*
+
+### 3. Deploy Firestore Security Rules
+The security rules ensure anyone can take quizzes while strictly restricting modifications to authenticated administrators:
 
 ```javascript
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    // Main quiz document: Public read for students, authenticated write for admin
-    match /quizzes/main {
-      allow read: if true;
-      allow write: if request.auth != null;
+
+    function isAdmin() {
+      return request.auth != null && (
+        request.auth.token.admin == true ||
+        request.auth.token.email in ['admin@course.edu']
+      );
     }
 
-    // Default deny for all other documents/collections
+    match /questions/{questionId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    match /settings/{settingId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
     match /{document=**} {
       allow read, write: if false;
     }
@@ -145,156 +162,106 @@ service cloud.firestore {
 }
 ```
 
-Click **Publish** to activate the rules immediately.
+Deploy the rules directly using:
+```bash
+npx tsx scripts/deploy-rules.ts
+```
+*(Or paste them into Firebase Console → Firestore Database → Rules).*
 
 ---
 
-## 5. Vercel Deployment & Environment Variables
-
-### Step 1: Deploy to Vercel
-1. Push your repository to GitHub, GitLab, or Bitbucket.
-2. In [Vercel](https://vercel.com/), click **Add New... → Project** and import the repository.
-3. Build Settings:
-   - **Framework Preset**: `Vite`
-   - **Build Command**: `npm run build`
-   - **Output Directory**: `dist`
-   - **Install Command**: `npm install`
-
-### Step 2: Configure Vercel Environment Variables
-Under **Settings → Environment Variables** in your Vercel project dashboard, add the following variables for **Production**, **Preview**, and **Development**:
-
-| Variable Name | Description | Example |
-| :--- | :--- | :--- |
-| `VITE_FIREBASE_API_KEY` | Firebase Web API Key | `AIzaSy...` |
-| `VITE_FIREBASE_AUTH_DOMAIN` | Firebase Auth Domain | `project.firebaseapp.com` |
-| `VITE_FIREBASE_PROJECT_ID` | Google Cloud / Firebase Project ID | `quiz-8c17a` |
-| `VITE_FIREBASE_STORAGE_BUCKET` | Firebase Storage Bucket | `quiz-8c17a.firebasestorage.app` |
-| `VITE_FIREBASE_MESSAGING_SENDER_ID` | Cloud Messaging Sender ID | `763661096559` |
-| `VITE_FIREBASE_APP_ID` | Firebase Web App ID | `1:7636...:web:...` |
-| `VITE_FIREBASE_MEASUREMENT_ID` | *(Optional)* Google Analytics ID | `G-BC9LNYMTY2` |
-
-### Step 3: Trigger Deployment
-Click **Deploy** (or push a commit). Because the application uses React Router's `HashRouter` (`/#/quiz`, `/#/admin`), all page refreshes and direct links resolve cleanly without requiring server-side rewrite rules.
-
----
-
-## 6. Architecture & Data Contracts
-
-### Repository Pattern (`QuestionsRepository`)
-Question access is abstracted behind a clean interface (`src/lib/questionsRepository.ts`):
-
-```typescript
-export interface QuestionsRepository {
-  load(): Promise<QuestionBank>;
-  save(bank: QuestionBank): Promise<void>;
-}
-```
-
-- **`FirestoreQuestionsRepository`**: Implements `QuestionsRepository`.
-  - **`load()`**: Reads `quizzes/main` from Firestore and runs it through `validateQuestionBankJson()`.
-  - **`save(bank)`**: Runs `QuestionBankSchema.parse(bank)` to validate structure, sanitizes undefined values, and persists with `setDoc()`.
-
-### Auth Service (`AuthService`)
-Admin session management is abstracted behind `src/features/admin/authService.ts`:
-
-```typescript
-export interface AuthService {
-  login(email: string, password: string): Promise<AdminSession>;
-  logout(): Promise<void>;
-  getSession(): AdminSession | null;
-  onAuthStateChanged(callback: (session: AdminSession | null) => void): () => void;
-}
-```
-
-- **`FirebaseAuthService`**: Wraps `signInWithEmailAndPassword`, `signOut`, and `onAuthStateChanged` from `firebase/auth`.
-- **`ProtectedRoute`**: Listens to `onAuthStateChanged` to prevent auth-redirect flicker on page reload.
-
----
-
-## 7. Question Schema Specification
-
-All questions conform to strict Zod schemas defined in `src/lib/questionSchema.ts`:
-
-### Multiple Choice Question (`mcq`)
-```typescript
-{
-  "id": "js_001",
-  "type": "mcq",
-  "question": "What is the output of `typeof null` in JavaScript?",
-  "code": "console.log(typeof null);",      // Optional snippet
-  "options": ["\"object\"", "\"null\"", "\"undefined\"", "\"number\""], // 2-6 items
-  "answer": 0,                             // Index of correct option (0-based)
-  "explanation": "In JavaScript, typeof null returns 'object' due to a historical bug.",
-  "category": "JavaScript",                // Optional
-  "difficulty": "easy"                     // Optional: "easy" | "medium" | "hard"
-}
-```
-
-### True / False Question (`true_false`)
-```typescript
-{
-  "id": "py_012",
-  "type": "true_false",
-  "question": "In Python, lists are immutable.",
-  "answer": false,                         // Boolean
-  "explanation": "Python lists are mutable; tuples are immutable.",
-  "category": "Python",
-  "difficulty": "easy"
-}
-```
-
----
-
-## 8. Folder Structure
+## 7. Project Structure
 
 ```text
 programming-quiz-app/
 ├── public/
-│   └── questions.json              # 120 baseline questions (for seeding & backup)
+│   └── questions_mcq_tf-v2.json    # Master question bank (263 questions)
+├── scripts/
+│   ├── seed.ts                     # Admin script for seeding Firestore
+│   ├── set-admin.ts                # Assigns `admin: true` custom claim to users
+│   └── deploy-rules.ts             # Programmatically deploys firestore.rules
 ├── src/
 │   ├── app/
-│   │   ├── App.tsx                 # Root component initializing quiz bank
-│   │   ├── Layout.tsx              # Sticky header, theme toggle, Firestore error screen
-│   │   ├── ProtectedRoute.tsx      # Reactive auth guard for /admin routes
-│   │   ├── providers.tsx           # Dark/Light theme provider & MotionConfig
-│   │   └── router.tsx              # HashRouter route configuration
-│   ├── components/ui/              # Atomic UI design system primitives
+│   │   ├── App.tsx                 # Root application entry
+│   │   ├── Layout.tsx              # Navigation bar, branding, theme toggle
+│   │   ├── ProtectedRoute.tsx      # Firebase Auth guard with claims verification
+│   │   ├── providers.tsx           # Theme & animation configuration
+│   │   └── router.tsx              # HashRouter routes definition
+│   ├── components/ui/              # Atomic reusable UI components
 │   │   ├── Badge.tsx
 │   │   ├── Button.tsx
 │   │   ├── Card.tsx
 │   │   ├── CodeBlock.tsx
-│   │   ├── FormattedText.tsx
+│   │   ├── ConfirmModal.tsx        # Styled delete confirmation modal
 │   │   ├── Modal.tsx
 │   │   ├── ProgressBar.tsx
 │   │   └── Table.tsx
 │   ├── features/
-│   │   ├── setup/                  # Student assessment setup (50/75/100 presets, timers)
-│   │   ├── quiz/                   # Active test engine (store, drift-free timer, navigator)
-│   │   ├── results/                # Score breakdown, circular ring, review list
-│   │   └── admin/                  # Instructor portal
-│   │       ├── AdminDashboard.tsx  # CRUD manager, live Firestore status, seed button
-│   │       ├── authService.ts      # AuthService interface + FirebaseAuthService
-│   │       ├── ImportExport.tsx    # Bulk-load to Firestore & JSON backup download
-│   │       ├── LoginPage.tsx       # Firebase Auth email/password login
-│   │       ├── QuestionForm.tsx    # Zod-validated Add/Edit modal
-│   │       ├── QuestionTable.tsx   # Searchable, filterable question table
-│   │       └── Settings.tsx        # Pass mark & default timer settings
+│   │   ├── admin/                  # Instructor management dashboard
+│   │   │   ├── AdminDashboard.tsx
+│   │   │   ├── authService.ts      # Client Firebase Auth service
+│   │   │   ├── ImportExport.tsx    # Batch import/export JSON tool
+│   │   │   ├── LoginPage.tsx       # Secure admin login form
+│   │   │   ├── QuestionForm.tsx    # Create & edit question modal
+│   │   │   ├── questionsService.ts # Service layer for Firestore CRUD & batching
+│   │   │   ├── QuestionTable.tsx   # Searchable & filterable question list
+│   │   │   └── Settings.tsx        # Pass mark & default timer settings
+│   │   ├── quiz/                   # Active exam runtime
+│   │   │   ├── Navigator.tsx       # Question grid & status overview
+│   │   │   ├── QuestionCard.tsx    # MCQ & True/False interactive card
+│   │   │   ├── QuizPage.tsx        # Core assessment controller
+│   │   │   ├── store.ts            # Zustand quiz state machine
+│   │   │   └── Timer.tsx           # Visual countdown timer
+│   │   ├── results/                # Post-assessment analysis
+│   │   │   ├── ResultsPage.tsx
+│   │   │   ├── ReviewList.tsx
+│   │   │   └── ScoreRing.tsx
+│   │   └── setup/                  # Assessment customization
+│   │       ├── CountSelector.tsx   # Slider & dynamic question count selector
+│   │       ├── SetupPage.tsx       # Multi-unit selector & configuration
+│   │       └── TimerSettings.tsx
 │   ├── lib/
-│   │   ├── firebase.ts             # Firebase app, auth, and firestore initialization
-│   │   ├── questionsRepository.ts  # QuestionsRepository interface & Firestore implementation
-│   │   ├── loadQuestions.ts        # In-memory cached quiz loader
-│   │   ├── questionSchema.ts       # Zod schemas & diagnostic issue formatter
-│   │   ├── scoring.ts              # Pure grading logic
-│   │   ├── shuffle.ts              # Fisher-Yates shuffle algorithms
-│   │   └── storage.ts              # Versioned localStorage wrapper (attempt history)
+│   │   ├── firebase.ts             # Client Firebase initialization
+│   │   ├── questionSchema.ts       # Zod schemas for MCQ and True/False types
+│   │   └── scoring.ts              # Pure scoring calculation utilities
 │   ├── types/
-│   │   └── quiz.ts                 # Domain TypeScript interfaces
-│   ├── index.css                   # Tailwind CSS layers and dark mode styles
-│   ├── main.tsx                    # React DOM root
-│   └── vite-env.d.ts               # Vite & Firebase environment variable typings
-├── .env.example                    # Template for Firebase environment variables
+│   │   └── quiz.ts                 # TypeScript domain types & interfaces
+│   ├── index.css                   # Global styles & Tailwind CSS directives
+│   └── main.tsx                    # React application bootstrap
+├── .env.example                    # Environment variable template
+├── .gitignore                      # Secrets & build artifact exclusion
+├── firebase.json                   # Firebase Hosting & Firestore configuration
+├── firestore.rules                 # Cloud Firestore access control rules
 ├── package.json
 ├── tailwind.config.js
 ├── tsconfig.json
 └── vite.config.ts
 ```
+
+---
+
+## 8. Deployment Guide
+
+### Vercel / Netlify
+1. Connect your repository to Vercel or Netlify.
+2. Build Settings:
+   - **Framework Preset**: `Vite`
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `dist`
+3. Add the environment variables from your `.env` to the provider's Environment Variables settings.
+4. Deploy.
+
+### Firebase Hosting
+```bash
+# Build the production bundle
+npm run build
+
+# Deploy hosting and Firestore rules
+firebase deploy
+```
+
+---
+
+## 9. License
+
+This project is licensed under the MIT License.
