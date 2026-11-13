@@ -1,0 +1,4271 @@
+[
+  {
+    "id": "q1",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "The keyword used to define a user function in PHP is:",
+    "code": "",
+    "options": [
+      "method",
+      "function",
+      "define",
+      "var"
+    ],
+    "answer": "function"
+  },
+  {
+    "id": "q2",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "How is a user-defined function named greet called?",
+    "code": "",
+    "options": [
+      "call greet;",
+      "greet();",
+      "function greet;",
+      "$greet"
+    ],
+    "answer": "greet();"
+  },
+  {
+    "id": "q3",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "Which of the following is the correct syntax of an arrow function?",
+    "code": "",
+    "options": [
+      "fn($x) => $x * 2;",
+      "function => $x * 2;",
+      "arrow($x) { return $x * 2; }",
+      "=> fn $x { $x * 2 }"
+    ],
+    "answer": "fn($x) => $x * 2;"
+  },
+  {
+    "id": "q4",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "In function greet($name) { ... }, the variable $name is called a:",
+    "code": "function greet($name) { ... }",
+    "options": [
+      "Constant",
+      "Parameter (argument)",
+      "Loop",
+      "Class"
+    ],
+    "answer": "Parameter (argument)"
+  },
+  {
+    "id": "q5",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "To prevent duplicate file inclusions in PHP, use the statement:",
+    "code": "",
+    "options": [
+      "repeat()",
+      "require()",
+      "include_once()",
+      "addfile()"
+    ],
+    "answer": "include_once()"
+  },
+  {
+    "id": "q6",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "Data sent using the GET method appears in the:",
+    "code": "",
+    "options": [
+      "Request Header",
+      "Request Body",
+      "URL Address Bar",
+      "Session State"
+    ],
+    "answer": "URL Address Bar"
+  },
+  {
+    "id": "q7",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "Which function protects against XSS attacks by converting special characters to HTML entities?",
+    "code": "",
+    "options": [
+      "htmlentities()",
+      "htmlspecialchars()",
+      "strip_tags()",
+      "sanitize()"
+    ],
+    "answer": "htmlspecialchars()"
+  },
+  {
+    "id": "q8",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "Which function continues execution even if the included file is missing?",
+    "code": "",
+    "options": [
+      "require()",
+      "include()",
+      "require_once()",
+      "exit()"
+    ],
+    "answer": "include()"
+  },
+  {
+    "id": "q9",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "Which method is better for sending sensitive information like passwords?",
+    "code": "",
+    "options": [
+      "GET",
+      "POST",
+      "Both are equally secure",
+      "Neither"
+    ],
+    "answer": "POST"
+  },
+  {
+    "id": "q10",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "Which attack injects malicious JavaScript/HTML into a website?",
+    "code": "",
+    "options": [
+      "SQL Injection",
+      "Cross-Site Scripting (XSS)",
+      "Phishing",
+      "DOS"
+    ],
+    "answer": "Cross-Site Scripting (XSS)"
+  },
+  {
+    "id": "q11",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "Approximately how much data can the GET method send?",
+    "code": "",
+    "options": [
+      "About 100 characters",
+      "About 2000 characters",
+      "1 MB",
+      "Unlimited data"
+    ],
+    "answer": "About 2000 characters"
+  },
+  {
+    "id": "q12",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "Which type of validation is not secure alone because users can turn it off?",
+    "code": "",
+    "options": [
+      "Server-side validation",
+      "Client-side validation",
+      "Database validation",
+      "Both are secure alone"
+    ],
+    "answer": "Client-side validation"
+  },
+  {
+    "id": "q13",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK21",
+    "type": "true_false",
+    "question": "PHP does not support user-defined functions.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q14",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK21",
+    "type": "true_false",
+    "question": "A function in PHP is a reusable block of code designed to perform a specific task.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q15",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK21",
+    "type": "true_false",
+    "question": "User-defined functions in PHP must always have parameters.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q16",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK21",
+    "type": "true_false",
+    "question": "An anonymous function is a function without a name that can be stored in a variable.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q17",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK21",
+    "type": "true_false",
+    "question": "Arrow functions require the function keyword and curly braces { }.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q18",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK21",
+    "type": "true_false",
+    "question": "The require() function halts script execution and throws a Fatal Error if the file is missing.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q19",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK21",
+    "type": "true_false",
+    "question": "Superglobals like $_GET and $_POST are always accessible regardless of scope.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q20",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK21",
+    "type": "true_false",
+    "question": "Data sent via the $_POST method is visible in the URL.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q21",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK21",
+    "type": "true_false",
+    "question": "$_POST has a data size limit of 2000 characters.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q22",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK21",
+    "type": "true_false",
+    "question": "Client-side validation alone is secure enough for form validation.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q23",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK21",
+    "type": "true_false",
+    "question": "The GET method can be bookmarked.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q24",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK21",
+    "type": "true_false",
+    "question": "The include_once() function loads the same file again every time it is called.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q25",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK21",
+    "type": "true_false",
+    "question": "Sanitization means cleaning user input to prevent attacks such as XSS and SQL injection.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q26",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK21",
+    "type": "true_false",
+    "question": "The POST method supports file uploads and binary data.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q27",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which symbol is used to declare variables in PHP?",
+    "code": "",
+    "options": [
+      "@",
+      "$",
+      "%",
+      "&"
+    ],
+    "answer": "$"
+  },
+  {
+    "id": "q28",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which operator is used for string concatenation in PHP?",
+    "code": "",
+    "options": [
+      "+",
+      "&",
+      ".",
+      ","
+    ],
+    "answer": "."
+  },
+  {
+    "id": "q29",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which of these is NOT a PHP data type?",
+    "code": "",
+    "options": [
+      "String",
+      "Float",
+      "Boolean",
+      "Character"
+    ],
+    "answer": "Character"
+  },
+  {
+    "id": "q30",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which PHP output statement can take multiple parameters?",
+    "code": "",
+    "options": [
+      "print",
+      "echo",
+      "display",
+      "write"
+    ],
+    "answer": "echo"
+  },
+  {
+    "id": "q31",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which loop guarantees at least one execution before checking the condition?",
+    "code": "",
+    "options": [
+      "for",
+      "while",
+      "do...while",
+      "foreach"
+    ],
+    "answer": "do...while"
+  },
+  {
+    "id": "q32",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "The break statement in PHP is used to:",
+    "code": "",
+    "options": [
+      "Skip only the current iteration",
+      "Terminate the loop completely",
+      "Restart the loop",
+      "Exit the script entirely"
+    ],
+    "answer": "Terminate the loop completely"
+  },
+  {
+    "id": "q33",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which statement checks multiple conditions in sequence?",
+    "code": "",
+    "options": [
+      "for",
+      "if...elseif...else",
+      "switch",
+      "while"
+    ],
+    "answer": "if...elseif...else"
+  },
+  {
+    "id": "q34",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which loop is used when the number of iterations is known in advance?",
+    "code": "",
+    "options": [
+      "foreach",
+      "while",
+      "for",
+      "do...while"
+    ],
+    "answer": "for"
+  },
+  {
+    "id": "q35",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which function returns the square root of a number?",
+    "code": "",
+    "options": [
+      "round()",
+      "sqrt()",
+      "pow()",
+      "abs()"
+    ],
+    "answer": "sqrt()"
+  },
+  {
+    "id": "q36",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which of the following is an Indexed Array?",
+    "code": "",
+    "options": [
+      "$students = [\"Ali\", \"Sara\", \"John\"];",
+      "$students = [\"name\"=>\"Ali\", \"age\"=>20];",
+      "$students = [[\"Ali\", 20], [\"Sara\", 22]];",
+      "None of the above"
+    ],
+    "answer": "$students = [\"Ali\", \"Sara\", \"John\"];"
+  },
+  {
+    "id": "q37",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which array function inserts an element at the beginning of an array?",
+    "code": "",
+    "options": [
+      "array_push()",
+      "array_pop()",
+      "array_shift()",
+      "array_unshift()"
+    ],
+    "answer": "array_unshift()"
+  },
+  {
+    "id": "q38",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which function returns the current Unix timestamp in seconds since January 1, 1970?",
+    "code": "",
+    "options": [
+      "date()",
+      "time()",
+      "strtotime()",
+      "mktime()"
+    ],
+    "answer": "time()"
+  },
+  {
+    "id": "q39",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which function strips whitespace from the beginning and end of a string?",
+    "code": "",
+    "options": [
+      "trim()",
+      "strip()",
+      "clean()",
+      "erase()"
+    ],
+    "answer": "trim()"
+  },
+  {
+    "id": "q40",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which function connects a PHP script to a MySQL database?",
+    "code": "",
+    "options": [
+      "mysql_old()",
+      "mysqldb()",
+      "mysqli_connect()",
+      "mysqlphp()"
+    ],
+    "answer": "mysqli_connect()"
+  },
+  {
+    "id": "q41",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "What is the default port number for MySQL databases?",
+    "code": "",
+    "options": [
+      "80",
+      "443",
+      "3306",
+      "8080"
+    ],
+    "answer": "3306"
+  },
+  {
+    "id": "q42",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "A single entry in a database table is called a:",
+    "code": "",
+    "options": [
+      "Column",
+      "Row (record)",
+      "Query",
+      "Schema"
+    ],
+    "answer": "Row (record)"
+  },
+  {
+    "id": "q43",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "PHP is a client-side programming language.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q44",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "The acronym PHP stands for \"Hypertext Preprocessor\".",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q45",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "PHP code can be embedded directly within HTML code.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q46",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "Apache Server is a programming language used for web development.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q47",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "PHP scripts are executed on the server before the results are sent to the browser.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q48",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "The print statement is faster in execution than the echo statement.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q49",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "All variables in PHP must begin with the $ sign.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q50",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "Variable names in PHP are case-insensitive.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q51",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "The default file extension for PHP files is .ph.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q52",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "Constants in PHP are defined using the define() function.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q53",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "Each PHP statement ends with a semicolon (;).",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q54",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "Single-line comments in PHP can only be written using the # symbol.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q55",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "The if statement executes a block of code only if the specified condition is true.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q56",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "The while loop checks its condition after running the code block.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q57",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "The foreach loop is designed for looping through arrays.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q58",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "The ceil() function rounds a number down to the nearest integer.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q59",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "By default, PHP array indexes start at 0.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q60",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "MySQL is an open-source relational database management system (RDBMS).",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q61",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "The default port for MySQL is 8080.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q62",
+    "unit_key": "unit_19",
+    "unit_number": 19,
+    "unit": "Unit 19: PHP (Level 1)",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "phpMyAdmin can be used to create a database.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q63",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK20",
+    "type": "true_false",
+    "question": "The time() function returns the current date formatted as 'Y-m-d'.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q64",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK20",
+    "type": "true_false",
+    "question": "The strtotime() function can parse English textual descriptions into a timestamp.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q65",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK20",
+    "type": "true_false",
+    "question": "In PHP OOP, an object is a template for a class.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q66",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK20",
+    "type": "true_false",
+    "question": "The $this keyword is available outside of a class's methods.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q67",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK20",
+    "type": "true_false",
+    "question": "A constructor function in PHP is named construct().",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q68",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK20",
+    "type": "true_false",
+    "question": "A destructor is automatically called when an object is destroyed or the script ends.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q69",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK20",
+    "type": "true_false",
+    "question": "A public property can be accessed from anywhere.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q70",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK20",
+    "type": "true_false",
+    "question": "A private property can be accessed by a class derived from the parent class.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q71",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK20",
+    "type": "true_false",
+    "question": "Encapsulation is the OOP principle for restricting access to internal details via access modifiers.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q72",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK20",
+    "type": "true_false",
+    "question": "Inheritance allows a class to acquire properties and methods from another class.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q73",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK20",
+    "type": "true_false",
+    "question": "Polymorphism allows different objects to be used through the same interface.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q74",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK20",
+    "type": "true_false",
+    "question": "The getdate() function returns a Unix timestamp.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q75",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK20",
+    "type": "true_false",
+    "question": "The checkdate() function is used to validate a Gregorian date.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q76",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK20",
+    "type": "true_false",
+    "question": "You must use the set_name() method to set a property if a constructor is defined.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q77",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK20",
+    "type": "true_false",
+    "question": "The date_default_timezone_set() function affects all date/time functions in the script.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q78",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "Which function would you use to get the number of seconds since January 1, 1970?",
+    "code": "",
+    "options": [
+      "date()",
+      "time()",
+      "getdate()",
+      "strtotime()"
+    ],
+    "answer": "time()"
+  },
+  {
+    "id": "q79",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "What is the primary advantage of using a constructor function?",
+    "code": "",
+    "options": [
+      "To destroy the object",
+      "To automatically initialize an object's properties upon creation",
+      "To set the access modifier",
+      "To make properties private"
+    ],
+    "answer": "To automatically initialize an object's properties upon creation"
+  },
+  {
+    "id": "q80",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "Which access modifier restricts access to ONLY within the class itself?",
+    "code": "",
+    "options": [
+      "public",
+      "final",
+      "protected",
+      "private"
+    ],
+    "answer": "private"
+  },
+  {
+    "id": "q81",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "The OOP principle that promotes code reuse by allowing a class to inherit from another is called:",
+    "code": "",
+    "options": [
+      "Encapsulation",
+      "Inheritance",
+      "Polymorphism",
+      "Abstraction"
+    ],
+    "answer": "Inheritance"
+  },
+  {
+    "id": "q82",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "What keyword is used to create a new instance of a class (an object)?",
+    "code": "",
+    "options": [
+      "instance",
+      "object",
+      "new",
+      "this"
+    ],
+    "answer": "new"
+  },
+  {
+    "id": "q83",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "Which function converts a string like \"next Monday\" into a Unix timestamp?",
+    "code": "",
+    "options": [
+      "date()",
+      "time()",
+      "strtotime()",
+      "getdate()"
+    ],
+    "answer": "strtotime()"
+  },
+  {
+    "id": "q84",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "Inside a class method, which keyword refers to the current object?",
+    "code": "",
+    "options": [
+      "self",
+      "that",
+      "this",
+      "object"
+    ],
+    "answer": "this"
+  },
+  {
+    "id": "q85",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "Which principle restricts direct access to an object's data and uses methods to interact with it?",
+    "code": "",
+    "options": [
+      "Abstraction",
+      "Inheritance",
+      "Encapsulation",
+      "Polymorphism"
+    ],
+    "answer": "Encapsulation"
+  },
+  {
+    "id": "q86",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "How do you set the default timezone to \"America/New_York\"?",
+    "code": "",
+    "options": [
+      "set_timezone(\"America/New_York\")",
+      "date_default_timezone_set(\"America/New_York\")",
+      "default_timezone(\"America/New_York\")",
+      "timezone_set(\"America/New_York\")"
+    ],
+    "answer": "date_default_timezone_set(\"America/New_York\")"
+  },
+  {
+    "id": "q87",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "What is a class in OOP?",
+    "code": "",
+    "options": [
+      "An instance of an object",
+      "A template for objects",
+      "A built-in PHP function",
+      "A type of variable"
+    ],
+    "answer": "A template for objects"
+  },
+  {
+    "id": "q88",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "Which OOP principle allows objects of different classes to respond to the same method call in different ways?",
+    "code": "",
+    "options": [
+      "Encapsulation",
+      "Inheritance",
+      "Abstraction",
+      "Polymorphism"
+    ],
+    "answer": "Polymorphism"
+  },
+  {
+    "id": "q89",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "When will a destructor function be called?",
+    "code": "",
+    "options": [
+      "When an object is created",
+      "At the end of the script or when the object is destroyed",
+      "Only when manually called",
+      "At the beginning of the script"
+    ],
+    "answer": "At the end of the script or when the object is destroyed"
+  },
+  {
+    "id": "q90",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "If a property is declared as protected, where can it be accessed?",
+    "code": "",
+    "options": [
+      "From anywhere",
+      "Only within the class it is declared",
+      "Within the class and by classes derived from it",
+      "Only by the parent class"
+    ],
+    "answer": "Within the class and by classes derived from it"
+  },
+  {
+    "id": "q91",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "The getdate() function returns its data in what format?",
+    "code": "",
+    "options": [
+      "A formatted string",
+      "A Unix timestamp",
+      "An associative array",
+      "A serialized object"
+    ],
+    "answer": "An associative array"
+  },
+  {
+    "id": "q92",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "true_false",
+    "question": "File handling in PHP can only be used to read files, not write to them.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q93",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "true_false",
+    "question": "The enctype attribute for a file upload form must be set to multipart/form-data.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q94",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "true_false",
+    "question": "The $_FILES superglobal array is used to access information about an uploaded file.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q95",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "true_false",
+    "question": "The move_uploaded_file() function is used to delete a file from the server.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q96",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "true_false",
+    "question": "PDO stands for PHP Data Orientation.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q97",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "true_false",
+    "question": "PDO can only be used to connect to MySQL databases.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q98",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "true_false",
+    "question": "Prepared statements in PDO help prevent SQL injection attacks.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q99",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "true_false",
+    "question": "The default error mode for PDO is PDO::ERRMODE_EXCEPTION.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q100",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "true_false",
+    "question": "Cookies are stored on the server.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q101",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "true_false",
+    "question": "The setcookie() function must be called before any HTML output is sent to the browser.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q102",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "true_false",
+    "question": "The $_COOKIE superglobal array is used to access cookie values.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q103",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "true_false",
+    "question": "To delete a cookie, you set its expiration time to a past date.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q104",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "true_false",
+    "question": "Sessions are stored on the client's browser.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q105",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "true_false",
+    "question": "The session_start() function is used to begin a new session or resume an existing one.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q106",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "true_false",
+    "question": "Session variables are stored in the $_SESSION superglobal array.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q107",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "true_false",
+    "question": "The session_destroy() function alone is sufficient to immediately unset all session variables.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q108",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "true_false",
+    "question": "Cookies are more secure than sessions for storing sensitive data because they are stored on the server.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q109",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "true_false",
+    "question": "The session_unset() function removes all session variables.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q110",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "true_false",
+    "question": "The isset() function can be used to check if a cookie has been set.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q111",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "true_false",
+    "question": "Sessions use a cookie on the client-side to store the session ID.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q112",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "Which function is crucial for moving an uploaded file to a permanent location?",
+    "code": "",
+    "options": [
+      "copy_file()",
+      "move_uploaded_file()",
+      "save_upload()",
+      "store_file()"
+    ],
+    "answer": "move_uploaded_file()"
+  },
+  {
+    "id": "q113",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "Which HTML form attribute is essential for enabling file uploads?",
+    "code": "",
+    "options": [
+      "method=\"GET\"",
+      "action=\"upload.php\"",
+      "enctype=\"multipart/form-data\"",
+      "type=\"file\""
+    ],
+    "answer": "enctype=\"multipart/form-data\""
+  },
+  {
+    "id": "q114",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "Where is information about an uploaded file temporarily stored before being processed by PHP?",
+    "code": "",
+    "options": [
+      "$_FILES[\"file\"][\"tmp_name\"]",
+      "$_FILES[\"file\"][\"perm_name\"]",
+      "$_POST[\"file\"]",
+      "$_GET[\"file\"]"
+    ],
+    "answer": "$_FILES[\"file\"][\"tmp_name\"]"
+  },
+  {
+    "id": "q115",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "What is the primary advantage of using PDO over the older mysql extension?",
+    "code": "",
+    "options": [
+      "It's faster",
+      "It provides a consistent interface for multiple databases",
+      "It doesn't require a password",
+      "It only works with MySQL"
+    ],
+    "answer": "It provides a consistent interface for multiple databases"
+  },
+  {
+    "id": "q116",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "Which PDO error mode is recommended for using exceptions for error handling?",
+    "code": "",
+    "options": [
+      "PDO::ERRMODE_SILENT",
+      "PDO::ERRMODE_WARNING",
+      "PDO::ERRMODE_EXCEPTION",
+      "PDO::ERRMODE_STRICT"
+    ],
+    "answer": "PDO::ERRMODE_EXCEPTION"
+  },
+  {
+    "id": "q117",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "Which method is used to execute a prepared statement in PDO?",
+    "code": "",
+    "options": [
+      "run()",
+      "execute()",
+      "query()",
+      "fetch()"
+    ],
+    "answer": "execute()"
+  },
+  {
+    "id": "q118",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "What is the main security benefit of using prepared statements?",
+    "code": "",
+    "options": [
+      "They make queries run faster",
+      "They prevent SQL injection attacks",
+      "They compress data",
+      "They encrypt database connections"
+    ],
+    "answer": "They prevent SQL injection attacks"
+  },
+  {
+    "id": "q119",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "Which function is used to create a cookie in PHP?",
+    "code": "",
+    "options": [
+      "create_cookie()",
+      "make_cookie()",
+      "setcookie()",
+      "set_cookie()"
+    ],
+    "answer": "setcookie()"
+  },
+  {
+    "id": "q120",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "Which superglobal array is used to access a cookie's value?",
+    "code": "",
+    "options": [
+      "$_GET",
+      "$_POST",
+      "$_REQUEST",
+      "$_COOKIE"
+    ],
+    "answer": "$_COOKIE"
+  },
+  {
+    "id": "q121",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "To delete a cookie, you set its expiration time to:",
+    "code": "",
+    "options": [
+      "time() + 3600",
+      "0",
+      "A time in the past (e.g., time() - 3600)",
+      "null"
+    ],
+    "answer": "A time in the past (e.g., time() - 3600)"
+  },
+  {
+    "id": "q122",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "Where is session data stored by default?",
+    "code": "",
+    "options": [
+      "On the client's browser",
+      "In a database",
+      "In a cookie",
+      "On the server"
+    ],
+    "answer": "On the server"
+  },
+  {
+    "id": "q123",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "Which function must always be called before using $_SESSION variables?",
+    "code": "",
+    "options": [
+      "session_begin()",
+      "start_session()",
+      "session_start()",
+      "session_init()"
+    ],
+    "answer": "session_start()"
+  },
+  {
+    "id": "q124",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "Which superglobal array is used to store and access session variables?",
+    "code": "",
+    "options": [
+      "$_COOKIE",
+      "$_SESSION",
+      "$_SERVER",
+      "$_STORAGE"
+    ],
+    "answer": "$_SESSION"
+  },
+  {
+    "id": "q125",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "To remove all session variables but keep the session intact, you would use:",
+    "code": "",
+    "options": [
+      "session_destroy()",
+      "session_remove()",
+      "session_unset()",
+      "unset($_SESSION)"
+    ],
+    "answer": "session_unset()"
+  },
+  {
+    "id": "q126",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "To completely destroy a session, including the session ID, you should use:",
+    "code": "",
+    "options": [
+      "session_unset() followed by session_destroy()",
+      "Only session_destroy()",
+      "unset($_SESSION)",
+      "delete_session()"
+    ],
+    "answer": "session_unset() followed by session_destroy()"
+  },
+  {
+    "id": "q127",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "What is stored on the client's browser to identify a user's session?",
+    "code": "",
+    "options": [
+      "All their session variables",
+      "A session ID",
+      "Their username",
+      "A unique token"
+    ],
+    "answer": "A session ID"
+  },
+  {
+    "id": "q128",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "Which of these is a key difference between sessions and cookies?",
+    "code": "",
+    "options": [
+      "Sessions are stored on the client, cookies on the server.",
+      "Cookies are stored on the client, sessions on the server.",
+      "Sessions are always persistent.",
+      "Cookies cannot be deleted."
+    ],
+    "answer": "Cookies are stored on the client, sessions on the server."
+  },
+  {
+    "id": "q129",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "Which function checks if a variable is set and is not NULL?",
+    "code": "",
+    "options": [
+      "is_null()",
+      "check()",
+      "isset()",
+      "empty()"
+    ],
+    "answer": "isset()"
+  },
+  {
+    "id": "q130",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "In a PDO connection string (DSN), what does mysql:host=localhost;dbname=testdb specify?",
+    "code": "mysql:host=localhost;dbname=testdb",
+    "options": [
+      "The username and password",
+      "The driver, host, and database name",
+      "The error mode",
+      "The prepared statement"
+    ],
+    "answer": "The driver, host, and database name"
+  },
+  {
+    "id": "q131",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "Which PDO method is best for executing a SELECT statement with variables?",
+    "code": "",
+    "options": [
+      "exec()",
+      "query()",
+      "prepare() and execute()",
+      "run()"
+    ],
+    "answer": "prepare() and execute()"
+  },
+  {
+    "id": "q132",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "JSON is primarily used for styling web pages.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q133",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "The json_encode() function converts a JSON string into a PHP variable.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q134",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "A Try-Catch block is used for handling errors gracefully.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q135",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "divide(10, 0) will execute without causing an error.",
+    "code": "divide(10, 0)",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q136",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "PHP filters are only used for validating data, not for sanitizing it.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q137",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "FILTER_VALIDATE_EMAIL checks if an email address is properly formatted.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q138",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "FILTER_SANITIZE_NUMBER_INT will remove all alphabetic characters from a string, leaving only numbers and digits.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q139",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "The filter_input() function is used to filter data from a file.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q140",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "FILTER_SANITIZE_SPECIAL_CHARS converts special characters like < and > into HTML entities.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q141",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "The filter_var_array() function is used to filter a single variable with multiple filters.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q142",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "You can set options like 'min_range' and 'max_range' with FILTER_VALIDATE_INT.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q143",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "In a Try-Catch block, the code in the catch section runs only if an error occurs in the try section.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q144",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "What does JSON stand for?",
+    "code": "",
+    "options": [
+      "Java Standard Object Notation",
+      "JavaScript Object Notation",
+      "JavaScript Operational Network",
+      "Java Oriented Numbering"
+    ],
+    "answer": "JavaScript Object Notation"
+  },
+  {
+    "id": "q145",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which PHP function converts a PHP array or object into a JSON string?",
+    "code": "",
+    "options": [
+      "json_convert()",
+      "json_string()",
+      "json_decode()",
+      "json_encode()"
+    ],
+    "answer": "json_encode()"
+  },
+  {
+    "id": "q146",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "What is the primary purpose of a Try-Catch block?",
+    "code": "",
+    "options": [
+      "To make code run faster",
+      "To hide all errors from the user",
+      "To handle potential errors without crashing the script",
+      "To terminate the script safely"
+    ],
+    "answer": "To handle potential errors without crashing the script"
+  },
+  {
+    "id": "q147",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "In the context of PHP filters, what does \"sanitization\" mean?",
+    "code": "",
+    "options": [
+      "Checking if data meets a specific format",
+      "Encrypting data for security",
+      "Removing or encoding unwanted characters",
+      "Deleting the input data"
+    ],
+    "answer": "Removing or encoding unwanted characters"
+  },
+  {
+    "id": "q148",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which filter would you use to check if a value is a whole number?",
+    "code": "",
+    "options": [
+      "FILTER_SANITIZE_NUMBER_INT",
+      "FILTER_VALIDATE_INT",
+      "FILTER_VALIDATE_FLOAT",
+      "FILTER_SANITIZE_SPECIAL_CHARS"
+    ],
+    "answer": "FILTER_VALIDATE_INT"
+  },
+  {
+    "id": "q149",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "You have a string \"123abc456\". Using FILTER_SANITIZE_NUMBER_INT, what is the result?",
+    "code": "",
+    "options": [
+      "123",
+      "456",
+      "123456",
+      "\"abc\""
+    ],
+    "answer": "123456"
+  },
+  {
+    "id": "q150",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which function is best for retrieving and filtering data from a POST form submission?",
+    "code": "",
+    "options": [
+      "filter_var()",
+      "filter_input()",
+      "filter_sanitize()",
+      "get_post_input()"
+    ],
+    "answer": "filter_input()"
+  },
+  {
+    "id": "q151",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "What does the second parameter (true) in json_decode($jsonFile, true) do?",
+    "code": "json_decode($jsonFile, true)",
+    "options": [
+      "Makes the function throw an error on failure",
+      "Returns the data as an associative array instead of an object",
+      "Validates the JSON before decoding it",
+      "Encodes the JSON with pretty print"
+    ],
+    "answer": "Returns the data as an associative array instead of an object"
+  },
+  {
+    "id": "q152",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which part of a Try-Catch block contains the code that might generate an error?",
+    "code": "",
+    "options": [
+      "The catch block",
+      "The finally block",
+      "The error block",
+      "The try block"
+    ],
+    "answer": "The try block"
+  },
+  {
+    "id": "q153",
+    "unit_key": "unit_20",
+    "unit_number": 20,
+    "unit": "Unit 20: Programming & Web Development",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "To validate multiple input variables at once, which function should you use?",
+    "code": "",
+    "options": [
+      "filter_var()",
+      "filter_input()",
+      "filter_var_array()",
+      "array_filter()"
+    ],
+    "answer": "filter_var_array()"
+  },
+  {
+    "id": "q154",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "What is Laravel?",
+    "code": "",
+    "options": [
+      "A database system",
+      "A CSS framework",
+      "A JavaScript framework",
+      "A PHP framework"
+    ],
+    "answer": "A PHP framework"
+  },
+  {
+    "id": "q155",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "What does MVC stand for in Laravel?",
+    "code": "",
+    "options": [
+      "Model, Variable, Controller",
+      "Model, View, Component",
+      "Model, View, Controller",
+      "Module, View, Controller"
+    ],
+    "answer": "Model, View, Controller"
+  },
+  {
+    "id": "q156",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which tool is used to manage Laravel and its packages?",
+    "code": "",
+    "options": [
+      "Composer",
+      "Docker",
+      "npm",
+      "Git"
+    ],
+    "answer": "Composer"
+  },
+  {
+    "id": "q157",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which command creates a new Laravel project named myFirstApp using the Laravel Installer?",
+    "code": "",
+    "options": [
+      "laravel new myFirstApp",
+      "php artisan new myFirstApp",
+      "composer serve myFirstApp",
+      "php new laravel myFirstApp"
+    ],
+    "answer": "laravel new myFirstApp"
+  },
+  {
+    "id": "q158",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "What does the php artisan serve command do?",
+    "code": "php artisan serve",
+    "options": [
+      "Creates a new controller",
+      "Starts the development server",
+      "Runs database migrations",
+      "Installs Laravel"
+    ],
+    "answer": "Starts the development server"
+  },
+  {
+    "id": "q159",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which folder contains Laravel's Blade (HTML) templates?",
+    "code": "",
+    "options": [
+      "app/",
+      "public/",
+      "resources/views/",
+      "config/"
+    ],
+    "answer": "resources/views/"
+  },
+  {
+    "id": "q160",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "In which file are Laravel web routes defined?",
+    "code": "",
+    "options": [
+      "app/Http/Controllers",
+      "resources/views/welcome.blade.php",
+      "routes/web.php",
+      "routes/api.php"
+    ],
+    "answer": "routes/web.php"
+  },
+  {
+    "id": "q161",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "What file extension must Blade templates have?",
+    "code": "",
+    "options": [
+      ".blade.php",
+      ".blade.html",
+      ".php",
+      ".html"
+    ],
+    "answer": ".blade.php"
+  },
+  {
+    "id": "q162",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which command creates a new controller?",
+    "code": "",
+    "options": [
+      "php artisan new controller",
+      "php artisan route:list",
+      "php artisan serve",
+      "php artisan make:controller"
+    ],
+    "answer": "php artisan make:controller"
+  },
+  {
+    "id": "q163",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "What does middleware do in Laravel?",
+    "code": "",
+    "options": [
+      "Stores database records",
+      "Formats JSON responses",
+      "Filters or modifies requests before they reach routes or controllers",
+      "Creates Blade templates"
+    ],
+    "answer": "Filters or modifies requests before they reach routes or controllers"
+  },
+  {
+    "id": "q164",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "In Route::get('/users/{id}', ...), what is {id}?",
+    "code": "Route::get('/users/{id}', ...)",
+    "options": [
+      "A Blade directive",
+      "A route parameter",
+      "A middleware",
+      "A closure function"
+    ],
+    "answer": "A route parameter"
+  },
+  {
+    "id": "q165",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "What does the route /users/{id?} mean?",
+    "code": "/users/{id?}",
+    "options": [
+      "The route is only for admins",
+      "The id parameter is required",
+      "The route returns JSON only",
+      "The id parameter is optional"
+    ],
+    "answer": "The id parameter is optional"
+  },
+  {
+    "id": "q166",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "What does Eloquent ORM allow developers to do?",
+    "code": "",
+    "options": [
+      "Interact with databases using PHP objects",
+      "Work only with NoSQL databases",
+      "Write raw SQL only",
+      "Create tables without migrations"
+    ],
+    "answer": "Interact with databases using PHP objects"
+  },
+  {
+    "id": "q167",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which Laravel feature is used to generate fake data for testing?",
+    "code": "",
+    "options": [
+      "Controller",
+      "Route",
+      "Migration",
+      "Factory"
+    ],
+    "answer": "Factory"
+  },
+  {
+    "id": "q168",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which HTTP method is used to update data in RESTful APIs?",
+    "code": "",
+    "options": [
+      "POST",
+      "PUT/PATCH",
+      "DELETE",
+      "GET"
+    ],
+    "answer": "PUT/PATCH"
+  },
+  {
+    "id": "q169",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Where are Laravel API routes typically defined?",
+    "code": "",
+    "options": [
+      "routes/api.php",
+      "app/Http/Controllers",
+      "routes/console.php",
+      "routes/web.php"
+    ],
+    "answer": "routes/api.php"
+  },
+  {
+    "id": "q170",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which of the following is NOT a type of Eloquent relationship?",
+    "code": "",
+    "options": [
+      "One-to-One",
+      "One-to-Many",
+      "Many-to-Many",
+      "Table-to-View"
+    ],
+    "answer": "Table-to-View"
+  },
+  {
+    "id": "q171",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which status code means that the requested resource was Not Found?",
+    "code": "",
+    "options": [
+      "201",
+      "500",
+      "404",
+      "200"
+    ],
+    "answer": "404"
+  },
+  {
+    "id": "q172",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "What does CRUD stand for?",
+    "code": "",
+    "options": [
+      "Command, Response, Upload, Download",
+      "Create, Read, Update, Delete",
+      "Controller, Request, Update, Data",
+      "Cache, Route, Update, Deploy"
+    ],
+    "answer": "Create, Read, Update, Delete"
+  },
+  {
+    "id": "q173",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "What is the purpose of a flash message?",
+    "code": "",
+    "options": [
+      "To store uploaded images",
+      "To show a temporary notification after an action",
+      "To validate email formats",
+      "To define routes"
+    ],
+    "answer": "To show a temporary notification after an action"
+  },
+  {
+    "id": "q174",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which Blade directive connects a child view to a master layout?",
+    "code": "",
+    "options": [
+      "@extends",
+      "@yield",
+      "@show",
+      "@parent"
+    ],
+    "answer": "@extends"
+  },
+  {
+    "id": "q175",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which Blade directive reserves a place in the layout for page-specific content?",
+    "code": "",
+    "options": [
+      "@extends",
+      "@endsection",
+      "@parent",
+      "@yield"
+    ],
+    "answer": "@yield"
+  },
+  {
+    "id": "q176",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "What does CSRF protection prevent?",
+    "code": "",
+    "options": [
+      "Slow database queries",
+      "Duplicate routes",
+      "A malicious site making a user's browser perform unwanted actions on a trusted site",
+      "Broken Blade templates"
+    ],
+    "answer": "A malicious site making a user's browser perform unwanted actions on a trusted site"
+  },
+  {
+    "id": "q177",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Where are uploaded images usually stored in Laravel?",
+    "code": "",
+    "options": [
+      "routes/",
+      "app/Http/Controllers/",
+      "config/",
+      "public/uploads"
+    ],
+    "answer": "public/uploads"
+  },
+  {
+    "id": "q178",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which command generates Bootstrap authentication views in Laravel?",
+    "code": "",
+    "options": [
+      "composer require laravel/ui",
+      "php artisan ui bootstrap --auth",
+      "php artisan make:auth-ui",
+      "php artisan breeze:install"
+    ],
+    "answer": "php artisan ui bootstrap --auth"
+  },
+  {
+    "id": "q179",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which command installs Laravel UI?",
+    "code": "",
+    "options": [
+      "composer require laravel/ui",
+      "npm install laravel-ui",
+      "composer require laravel/breeze --dev",
+      "php artisan ui bootstrap --auth"
+    ],
+    "answer": "composer require laravel/ui"
+  },
+  {
+    "id": "q180",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which Laravel package provides authentication with Tailwind CSS?",
+    "code": "",
+    "options": [
+      "Breeze",
+      "Eloquent",
+      "Artisan",
+      "Laravel UI"
+    ],
+    "answer": "Breeze"
+  },
+  {
+    "id": "q181",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "What are Policies used for in Laravel?",
+    "code": "",
+    "options": [
+      "Validating form data",
+      "Generating fake data",
+      "Model-specific authorization rules",
+      "Formatting JSON responses"
+    ],
+    "answer": "Model-specific authorization rules"
+  },
+  {
+    "id": "q182",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which npm command compiles the frontend assets after installing Breeze?",
+    "code": "",
+    "options": [
+      "npm make:assets",
+      "npm run dev",
+      "npm serve",
+      "npm artisan"
+    ],
+    "answer": "npm run dev"
+  },
+  {
+    "id": "q183",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which column is added to the users table to mark administrators?",
+    "code": "",
+    "options": [
+      "user_role_id",
+      "is_admin",
+      "admin_token",
+      "is_login"
+    ],
+    "answer": "is_admin"
+  },
+  {
+    "id": "q184",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "Laravel is a free and open-source PHP framework.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q185",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "In the MVC pattern, the Controller is the part that presents the user interface to the user.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q186",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "The routes/ folder is where you define your website's URLs.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q187",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "The command php artisan serve creates a new Laravel project.",
+    "code": "php artisan serve",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q188",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "Routing in Laravel connects a URL to a function or a controller.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q189",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "API routes are placed in routes/web.php together with the web routes.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q190",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "The {{ }} syntax in Blade is used to output variables safely.",
+    "code": "{{ }}",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q191",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "Middleware runs only after a request has been processed by the controller.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q192",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "In Eloquent, each model represents a database table and each model instance represents a row.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q193",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "The Query Builder requires writing raw SQL for all database operations.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q194",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "A GET request is used to delete data in RESTful APIs.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q195",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "API Resources help format JSON responses in a consistent way.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q196",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "Form validation ensures that user-submitted data is correct, complete, and safe to store.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q197",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "A flash message stays on the screen permanently, even after navigating to other pages.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q198",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "Blade's {{ }} echo statements escape output, which helps prevent XSS attacks.",
+    "code": "{{ }}",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q199",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "The @yield directive is used in a child view to inherit from a master layout.",
+    "code": "@yield",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q200",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "Laravel UI provides authentication scaffolding built with Bootstrap.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q201",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "Laravel Breeze provides authentication views styled with Bootstrap.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q202",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "Authorization defines what a logged-in user can or cannot do in an application.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": "q203",
+    "unit_key": "unit_21",
+    "unit_number": 21,
+    "unit": "Unit 21: Laravel",
+    "section": "TPK22",
+    "type": "true_false",
+    "question": "Using the auth middleware alone is enough to restrict the admin dashboard to administrators.",
+    "code": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": "q204",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "ReactJS is primarily used for:",
+    "code": "",
+    "options": [
+      "Backend development",
+      "Database management",
+      "Building user interfaces",
+      "Server configuration"
+    ],
+    "answer": "Building user interfaces"
+  },
+  {
+    "id": "q205",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "Which company maintains React.js?",
+    "code": "",
+    "options": [
+      "Google",
+      "Microsoft",
+      "Facebook",
+      "Amazon"
+    ],
+    "answer": "Facebook"
+  },
+  {
+    "id": "q206",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "What does the Virtual DOM do?",
+    "code": "",
+    "options": [
+      "Replaces the real DOM entirely",
+      "Updates only the changed parts of the real DOM",
+      "Slows down rendering performance",
+      "Converts JSX to HTML"
+    ],
+    "answer": "Updates only the changed parts of the real DOM"
+  },
+  {
+    "id": "q207",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "Which tool is recommended for creating a React app with fast development speed?",
+    "code": "",
+    "options": [
+      "Webpack",
+      "Gulp",
+      "Grunt",
+      "Vite"
+    ],
+    "answer": "Vite"
+  },
+  {
+    "id": "q208",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "What is JSX?",
+    "code": "",
+    "options": [
+      "A JavaScript testing framework",
+      "A syntax extension for JavaScript that allows HTML-like code",
+      "A database query language",
+      "A state management library"
+    ],
+    "answer": "A syntax extension for JavaScript that allows HTML-like code"
+  },
+  {
+    "id": "q209",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "Which command starts a React development server after creating a project with Vite?",
+    "code": "",
+    "options": [
+      "npm start",
+      "npm serve",
+      "npm build",
+      "npm run dev"
+    ],
+    "answer": "npm run dev"
+  },
+  {
+    "id": "q210",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "What is the main advantage of React's component-based architecture?",
+    "code": "",
+    "options": [
+      "Slower development time",
+      "Reusable and modular UI components",
+      "Incompatibility with other libraries",
+      "Increased server load"
+    ],
+    "answer": "Reusable and modular UI components"
+  },
+  {
+    "id": "q211",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "What does npm install do in a React project?",
+    "code": "npm install",
+    "options": [
+      "Starts the development server",
+      "Builds the production app",
+      "Installs project dependencies",
+      "Deletes node modules"
+    ],
+    "answer": "Installs project dependencies"
+  },
+  {
+    "id": "q212",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "What is the purpose of export default in a React component?",
+    "code": "export default",
+    "options": [
+      "To make the component private",
+      "To allow importing the component in other files",
+      "To delete the component",
+      "To style the component"
+    ],
+    "answer": "To allow importing the component in other files"
+  },
+  {
+    "id": "q213",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "Which file extension is commonly used for React component files that contain JSX?",
+    "code": "",
+    "options": [
+      ".jsx",
+      ".jpg",
+      ".json",
+      ".java"
+    ],
+    "answer": ".jsx"
+  },
+  {
+    "id": "q214",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "React Native is used to build:",
+    "code": "",
+    "options": [
+      "Mobile applications",
+      "Databases",
+      "Web servers",
+      "CSS styles"
+    ],
+    "answer": "Mobile applications"
+  },
+  {
+    "id": "q215",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "The default port for Vite is:",
+    "code": "",
+    "options": [
+      "3000",
+      "5173",
+      "8080",
+      "8000"
+    ],
+    "answer": "5173"
+  },
+  {
+    "id": "q216",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "Vite supports frameworks like:",
+    "code": "",
+    "options": [
+      "Only React",
+      "Angular only",
+      "React, Vue, Svelte",
+      "Django"
+    ],
+    "answer": "React, Vue, Svelte"
+  },
+  {
+    "id": "q217",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "JSX stands for:",
+    "code": "",
+    "options": [
+      "JavaScript XML",
+      "Java Syntax Extension",
+      "JSON XML",
+      "JS Extensions"
+    ],
+    "answer": "JavaScript XML"
+  },
+  {
+    "id": "q218",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "JSX allows embedding expressions with:",
+    "code": "",
+    "options": [
+      "Parentheses ()",
+      "Angle brackets <>",
+      "Square brackets []",
+      "Curly braces {}"
+    ],
+    "answer": "Curly braces {}"
+  },
+  {
+    "id": "q219",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "Which of the following best describes React's declarative approach to building UI?",
+    "code": "",
+    "options": [
+      "The developer manually updates the DOM step by step",
+      "The developer describes what the UI should look like and React updates the DOM",
+      "It requires jQuery to manipulate elements",
+      "It only works with class components"
+    ],
+    "answer": "The developer describes what the UI should look like and React updates the DOM"
+  },
+  {
+    "id": "q220",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "What are React components?",
+    "code": "",
+    "options": [
+      "A database used to store UI data",
+      "Reusable and independent pieces of UI",
+      "Only CSS files",
+      "Server configuration files"
+    ],
+    "answer": "Reusable and independent pieces of UI"
+  },
+  {
+    "id": "q221",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "Why use components in React?",
+    "code": "",
+    "options": [
+      "To increase complexity",
+      "To avoid JSX",
+      "To slow down development",
+      "To promote reusability and maintainability"
+    ],
+    "answer": "To promote reusability and maintainability"
+  },
+  {
+    "id": "q222",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "Which keyword is required for class components?",
+    "code": "",
+    "options": [
+      "function",
+      "new Component()",
+      "extends React.Component",
+      "React.createClass()"
+    ],
+    "answer": "extends React.Component"
+  },
+  {
+    "id": "q223",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "How do parent components pass data to children?",
+    "code": "",
+    "options": [
+      "Using state",
+      "Using refs",
+      "Using props",
+      "Using context"
+    ],
+    "answer": "Using props"
+  },
+  {
+    "id": "q224",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "Can child components modify props received from parents?",
+    "code": "",
+    "options": [
+      "Yes, always",
+      "Only with hooks",
+      "Only in class components",
+      "No, props are immutable"
+    ],
+    "answer": "No, props are immutable"
+  },
+  {
+    "id": "q225",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "How are inline styles applied in React?",
+    "code": "",
+    "options": [
+      "As strings (style=\"color: red\")",
+      "As JavaScript objects (style={{ color: \"red\" }})",
+      "Using external CSS only",
+      "None of the above"
+    ],
+    "answer": "As JavaScript objects (style={{ color: \"red\" }})"
+  },
+  {
+    "id": "q226",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "Where should global CSS files be imported?",
+    "code": "",
+    "options": [
+      "Only in child components",
+      "In the main entry file (e.g., main.jsx)",
+      "Only in class components",
+      "Nowhere"
+    ],
+    "answer": "In the main entry file (e.g., main.jsx)"
+  },
+  {
+    "id": "q227",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "How can Bootstrap be added to a React app?",
+    "code": "",
+    "options": [
+      "Only via CDN",
+      "Only via npm/yarn",
+      "Both CDN and npm/yarn",
+      "Neither"
+    ],
+    "answer": "Both CDN and npm/yarn"
+  },
+  {
+    "id": "q228",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "What is Tailwind CSS?",
+    "code": "",
+    "options": [
+      "A JavaScript framework",
+      "A utility-first CSS framework",
+      "A state management tool",
+      "A React hook"
+    ],
+    "answer": "A utility-first CSS framework"
+  },
+  {
+    "id": "q229",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "How are Tailwind classes applied in React?",
+    "code": "",
+    "options": [
+      "Using style attribute",
+      "Using id attribute",
+      "Using inline JavaScript",
+      "Using className attribute"
+    ],
+    "answer": "Using className attribute"
+  },
+  {
+    "id": "q230",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "What is the correct way to add a CSS class to a JSX element?",
+    "code": "",
+    "options": [
+      "class=\"box\"",
+      "className=\"box\"",
+      "css=\"box\"",
+      "style=\"box\""
+    ],
+    "answer": "className=\"box\""
+  },
+  {
+    "id": "q231",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "What is state in React?",
+    "code": "",
+    "options": [
+      "A function that returns JSX",
+      "An object that holds dynamic data for a component",
+      "A way to style components",
+      "A lifecycle method"
+    ],
+    "answer": "An object that holds dynamic data for a component"
+  },
+  {
+    "id": "q232",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "How do you update state in a functional component that uses useState?",
+    "code": "",
+    "options": [
+      "Using this.setState()",
+      "By assigning a new value directly (count = count + 1)",
+      "By calling the setter function returned by useState",
+      "Using props.update()"
+    ],
+    "answer": "By calling the setter function returned by useState"
+  },
+  {
+    "id": "q233",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "Props in React are:",
+    "code": "",
+    "options": [
+      "Mutable and can be changed by child components",
+      "Used only for styling",
+      "Read-only and passed from parent to child",
+      "Only usable in class components"
+    ],
+    "answer": "Read-only and passed from parent to child"
+  },
+  {
+    "id": "q234",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "What is the correct way to pass props to a child component?",
+    "code": "",
+    "options": [
+      "<Child {name: \"Shams\"} />",
+      "<Child name=\"Shams\" />",
+      "<Child props={name: \"Shams\"} />",
+      "<Child => name=\"Shams\" />"
+    ],
+    "answer": "<Child name=\"Shams\" />"
+  },
+  {
+    "id": "q235",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "What is the purpose of lifting state up?",
+    "code": "",
+    "options": [
+      "To reduce the number of components",
+      "To share state between sibling components via a parent",
+      "To improve performance by minimizing re-renders",
+      "To avoid using hooks"
+    ],
+    "answer": "To share state between sibling components via a parent"
+  },
+  {
+    "id": "q236",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "What happens when a component's state changes?",
+    "code": "",
+    "options": [
+      "The component is destroyed",
+      "The props are automatically updated",
+      "The component re-renders",
+      "Nothing happens"
+    ],
+    "answer": "The component re-renders"
+  },
+  {
+    "id": "q237",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "Which of the following can be passed to a component as props?",
+    "code": "",
+    "options": [
+      "Only strings",
+      "Only numbers",
+      "Strings, numbers, arrays, objects and functions",
+      "Nothing, props cannot carry data"
+    ],
+    "answer": "Strings, numbers, arrays, objects and functions"
+  },
+  {
+    "id": "q238",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "How should state be changed so that React re-renders the component?",
+    "code": "",
+    "options": [
+      "By assigning a new value directly",
+      "By using the setter function",
+      "By reloading the page",
+      "By editing the DOM manually"
+    ],
+    "answer": "By using the setter function"
+  },
+  {
+    "id": "q239",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "Which of the following is a state management solution?",
+    "code": "",
+    "options": [
+      "useEffect",
+      "useMemo",
+      "useRef",
+      "Redux"
+    ],
+    "answer": "Redux"
+  },
+  {
+    "id": "q240",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "When should you use props over state?",
+    "code": "",
+    "options": [
+      "When data needs to change frequently",
+      "When data is passed from parent to child and should not change",
+      "When you need to modify data inside a component",
+      "When using class components only"
+    ],
+    "answer": "When data is passed from parent to child and should not change"
+  },
+  {
+    "id": "q241",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "Which statement about state updates in React is correct?",
+    "code": "",
+    "options": [
+      "They always happen immediately and synchronously",
+      "They may be batched and applied asynchronously",
+      "They can only be triggered once per component",
+      "They only work inside class components"
+    ],
+    "answer": "They may be batched and applied asynchronously"
+  },
+  {
+    "id": "q242",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "Hooks can only be used in:",
+    "code": "",
+    "options": [
+      "Class components",
+      "Functional components",
+      "Both class and functional components",
+      "Regular JavaScript functions"
+    ],
+    "answer": "Functional components"
+  },
+  {
+    "id": "q243",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "You can call Hooks inside:",
+    "code": "",
+    "options": [
+      "Loops",
+      "Nested functions",
+      "Conditional statements",
+      "Top level of a component"
+    ],
+    "answer": "Top level of a component"
+  },
+  {
+    "id": "q244",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "Which Hook is best for simple state management?",
+    "code": "",
+    "options": [
+      "useReducer",
+      "useState",
+      "useEffect",
+      "useContext"
+    ],
+    "answer": "useState"
+  },
+  {
+    "id": "q245",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "What does useReducer return?",
+    "code": "",
+    "options": [
+      "Current state and a setter function",
+      "Current state and a dispatch function",
+      "Only the current state",
+      "Only a dispatch function"
+    ],
+    "answer": "Current state and a dispatch function"
+  },
+  {
+    "id": "q246",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "Which Hook is ideal for avoiding prop drilling?",
+    "code": "",
+    "options": [
+      "useState",
+      "useEffect",
+      "useContext",
+      "useReducer"
+    ],
+    "answer": "useContext"
+  },
+  {
+    "id": "q247",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK20",
+    "type": "mcq",
+    "question": "What does an empty dependency array [] mean when passed to useEffect?",
+    "code": "",
+    "options": [
+      "The effect runs on every render",
+      "The effect runs only once, after the initial render",
+      "The effect never runs",
+      "The effect runs only when the component unmounts"
+    ],
+    "answer": "The effect runs only once, after the initial render"
+  },
+  {
+    "id": "q248",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "React Router enables:",
+    "code": "",
+    "options": [
+      "Server-side routing",
+      "State management",
+      "Database queries",
+      "Client-side navigation"
+    ],
+    "answer": "Client-side navigation"
+  },
+  {
+    "id": "q249",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "To define routes, use:",
+    "code": "",
+    "options": [
+      "<Routes> and <Route>",
+      "<Link> and <NavLink>",
+      "<div> and <span>",
+      "<BrowserRouter> only"
+    ],
+    "answer": "<Routes> and <Route>"
+  },
+  {
+    "id": "q250",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "<Outlet> is used for:",
+    "code": "<Outlet>",
+    "options": [
+      "Nested routes",
+      "State management",
+      "API calls",
+      "Styling"
+    ],
+    "answer": "Nested routes"
+  },
+  {
+    "id": "q251",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "useNavigate() returns a:",
+    "code": "useNavigate()",
+    "options": [
+      "State variable",
+      "Route component",
+      "Function for programmatic navigation",
+      "CSS class"
+    ],
+    "answer": "Function for programmatic navigation"
+  },
+  {
+    "id": "q252",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "A 404 page uses the route path:",
+    "code": "",
+    "options": [
+      "\"/404\"",
+      "\"*\"",
+      "\"/error\"",
+      "\"not-found\""
+    ],
+    "answer": "\"*\""
+  },
+  {
+    "id": "q253",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "Which component syncs the React app with the browser's URL?",
+    "code": "",
+    "options": [
+      "<Route>",
+      "<BrowserRouter>",
+      "<Link>",
+      "<Provider>"
+    ],
+    "answer": "<BrowserRouter>"
+  },
+  {
+    "id": "q254",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "How do you define a dynamic route for user profiles (e.g., /users/123)?",
+    "code": "",
+    "options": [
+      "<Route path=\"/users/user\" element={<User />} />",
+      "<Route path=\"/users?id=id\" element={<User />} />",
+      "<Route path=\"/users/{id}\" element={<User />} />",
+      "<Route path=\"/users/:id\" element={<User />} />"
+    ],
+    "answer": "<Route path=\"/users/:id\" element={<User />} />"
+  },
+  {
+    "id": "q255",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "Which hook extracts URL parameters like :id?",
+    "code": "",
+    "options": [
+      "useNavigate()",
+      "useState()",
+      "useParams()",
+      "useEffect()"
+    ],
+    "answer": "useParams()"
+  },
+  {
+    "id": "q256",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "What does <NavLink> provide that <Link> does not?",
+    "code": "",
+    "options": [
+      "Faster navigation",
+      "Automatic active link styling",
+      "Server-side rendering",
+      "Redux integration"
+    ],
+    "answer": "Automatic active link styling"
+  },
+  {
+    "id": "q257",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK21",
+    "type": "mcq",
+    "question": "Which package must be installed to use routing features in a React application?",
+    "code": "",
+    "options": [
+      "react-dom",
+      "react-router-dom",
+      "react-navigation",
+      "react-routes"
+    ],
+    "answer": "react-router-dom"
+  },
+  {
+    "id": "q258",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which command creates a new React project using Vite?",
+    "code": "",
+    "options": [
+      "npm create vite@latest",
+      "npm install react-app",
+      "npm run react",
+      "npm start vite"
+    ],
+    "answer": "npm create vite@latest"
+  },
+  {
+    "id": "q259",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which file in a Vite React project renders the root component into the page?",
+    "code": "",
+    "options": [
+      "package.json",
+      "main.jsx",
+      "vite.config.js",
+      "node_modules"
+    ],
+    "answer": "main.jsx"
+  },
+  {
+    "id": "q260",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which command adds Bootstrap to a React project using a package manager?",
+    "code": "",
+    "options": [
+      "npm install bootstrap",
+      "npm run bootstrap",
+      "npm create bootstrap",
+      "npm start bootstrap"
+    ],
+    "answer": "npm install bootstrap"
+  },
+  {
+    "id": "q261",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "What is the main difference between <Link> and a normal <a> tag in a React single-page application?",
+    "code": "",
+    "options": [
+      "<Link> reloads the whole page",
+      "<Link> changes the URL without a full page reload",
+      "<Link> can only be used in class components",
+      "<Link> works only with Tailwind CSS"
+    ],
+    "answer": "<Link> changes the URL without a full page reload"
+  },
+  {
+    "id": "q262",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "What is the purpose of useEffect when fetching data from an API?",
+    "code": "",
+    "options": [
+      "To style the component",
+      "To perform side effects such as API calls after rendering",
+      "To create routes",
+      "To declare props"
+    ],
+    "answer": "To perform side effects such as API calls after rendering"
+  },
+  {
+    "id": "q263",
+    "unit_key": "unit_17",
+    "unit_number": 17,
+    "unit": "Unit 17: React.js",
+    "section": "TPK22",
+    "type": "mcq",
+    "question": "Which rendering approach does a standard Vite React app use by default?",
+    "code": "",
+    "options": [
+      "Client-side rendering (CSR)",
+      "Server-side rendering (SSR)",
+      "Static file rendering only",
+      "Database rendering"
+    ],
+    "answer": "Client-side rendering (CSR)"
+  }
+]

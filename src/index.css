@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: 248 250 252;
+    --bg-surface: 255 255 255;
+    --bg-elevated: 241 245 249;
+    --text-primary: 15 23 42;
+    --text-secondary: 71 85 105;
+    --text-muted: 148 163 184;
+    --accent: 79 70 229;
+    --accent-hover: 67 56 202;
+    --border-subtle: 226 232 240;
+  }
+
+  .dark {
+    --bg-primary: 9 13 22;
+    --bg-surface: 17 24 39;
+    --bg-elevated: 30 41 59;
+    --text-primary: 248 250 252;
+    --text-secondary: 148 163 184;
+    --text-muted: 100 116 139;
+    --accent: 99 102 241;
+    --accent-hover: 129 140 248;
+    --border-subtle: 30 41 59;
+  }
+
+  body {
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+}
+
+/* Custom subtle scrollbars for question navigator */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.35);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.55);
+}

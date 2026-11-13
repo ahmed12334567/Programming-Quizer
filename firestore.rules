@@ -1,0 +1,36 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper: checks if the caller has an authenticated session with admin privileges
+    // Accepts custom claim `admin: true` or verified admin email allowlist
+    function isAdmin() {
+      return request.auth != null && (
+        request.auth.token.admin == true ||
+        request.auth.token.email in ['admin@course.edu']
+      );
+    }
+
+    // Questions collection:
+    // - Read: public for all students (allows taking the quiz without authentication)
+    // - Write: strictly restricted to authenticated administrators
+    match /questions/{questionId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Settings collection (quiz title, passMark, default timers):
+    // - Read: public for all students
+    // - Write: restricted to authenticated administrators
+    match /settings/{settingId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Default deny: all other documents and collections are blocked
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
+
